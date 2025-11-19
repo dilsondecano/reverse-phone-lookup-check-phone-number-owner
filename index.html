@@ -311,9 +311,9 @@ a {
   border: none;
   text-align: left;
   padding: 18px 20px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  color: #333;
+  color: #505050;  
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -339,7 +339,7 @@ a {
 .faq-body {
   padding: 18px 25px;
   background: #fff;
-  font-size: 16px;
+  font-size: 20px;
   color: #444;
   border-top: 1px solid #f1d9bd;
 }
@@ -384,6 +384,14 @@ a {
     /* 576 Media Screen */
     @media only screen and (max-width: 576px) {
 
+      .faq-header {
+    font-size: 18px;
+}
+
+.faq-body {
+    font-size: 16px;
+}
+
       #sb-blogs h5 {
         font-size: 16px;
       }
@@ -416,6 +424,8 @@ a {
         font-size: 16px !important
       }
     }
+
+    
     .sb-why-rpl-list,
     .how-reverse-phone-lookup-col {
       border: 2px solid #d5d3d2 !important;
@@ -536,12 +546,12 @@ a {
       }
 
       #sb-other-rpl .sb-other-rpl-col-1 {
-        background: #f5f5f5;
+      
         padding: 1rem 0;
       }
 
       #sb-other-rpl .sb-other-rpl-col-2 {
-        background: #ee8a1d;
+      
         padding: 2rem 0;
       }
 
@@ -648,7 +658,7 @@ a {
         <div class="col-md-8">
           <h2 class="heading-3-dark">What is Reverse Phone Lookup?</h2>
           <p class="sb-text-primary">A Reverse Phone Lookup lets you search phone number details by entering a 10-digit
-            number instead of a name. It’s useful if you want to know who owns a number or if you’re trying to find a
+            number instead of a name. It's useful if you want to know who owns a number or if you're trying to find a
             current number to replace an old or outdated one.</p>
           <h2 class="heading-3-dark mt-4">Why you need to use it?</h2>
           <p class="sb-text-primary">Some sites offer a free phone number search, but results are often limited. A
@@ -780,8 +790,8 @@ a {
         </div>
 
         <div class="col-md sb-other-rpl-col-2">
-          <div class="row align-items-center">
-            <div class="col-5">
+          <div class="row align-items-center row align-items-center flex-column flex-md-row">
+            <div class="col-md-7">
               <ul class="sb-text-primary">
                 <li>One free search for new users</li>
                 <li>No contracts, no monthly fees</li>
@@ -789,7 +799,7 @@ a {
                 <li>No charge if no results are found</li>
               </ul>
             </div>
-            <div class="col-7">
+            <div class="col-md-5 text-center">
               <img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/other-phone-number-search-2-1.png"
                 alt="Other Reverse Phone Lookup 2" id="other-reverse-phone-lookup-img2" class="img-fluid">
             </div>
@@ -804,7 +814,7 @@ a {
     <div class="container">
       <h2 class="heading-2-orange text-center">Why Use a Reverse Phone Lookup Tool?
       </h2>
-      <p class="sb-text-primary text-center">A reverse phone lookup serves different needs depending on whether you’re
+      <p class="sb-text-primary text-center">A reverse phone lookup serves different needs depending on whether you're
         using it personally or for business.</p>
       <div class="row align-items-stretch">
         <div class="col-md-6">
@@ -833,7 +843,7 @@ a {
                 to be inaccurate.</li>
               <li><strong>Data accuracy</strong> - Verify that phone numbers collected from web forms match the correct
                 names and details in your database.</li>
-              <li><strong>Better outreach</strong> - Ensure you’re calling or emailing the right person so you don’t
+              <li><strong>Better outreach</strong> - Ensure you're calling or emailing the right person so you don't
                 waste time chasing bad leads.</li>
               <li><strong>List maintenance</strong> - Keep customer and prospect lists clean, accurate, and up to date
                 for ongoing communication.</li>
@@ -919,7 +929,7 @@ a {
     <div class="container">
       <h2 class="heading-2-light">Our Blogs</h2>
       <div class="row">
-        <div class="col-md-6 col-lg-3">
+        <div class="col-6 col-lg-3">
 
           <div class="">
             <a href="https://www.searchbug.com/info/how-to-get-a-geocoding-api-key-full-setup-guide-for-2025/"
@@ -933,7 +943,7 @@ a {
             </a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="">
             <a href="https://www.searchbug.com/info/the-future-of-digital-trust-balancing-transparency-and-privacy/"
               target="new_window">
@@ -946,7 +956,7 @@ a {
             </a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="">
             <a href="https://www.searchbug.com/info/how-information-confirmation-improves-belief-in-computerized-promoting-campaigns/"
               target="new_window">
@@ -959,7 +969,7 @@ a {
             </a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="">
             <a href="https://www.searchbug.com/info/best-7-social-media-apis-to-access-cross-platform-user-data-in-2025/"
               target="new_window">
@@ -1049,7 +1059,7 @@ a {
   <!-- FAQs -->
   <section class="padding-tb-50 bg-light" id="sb-faq">
     <div class="container">
-      <h2 class="text-center mb-5" style="color:#2c2c2c; font-weight:700;">
+      <h2 class="text-center mb-5 heading-2-dark">
         Frequently Asked Questions <span style="color:#ff8b00;">(FAQ)</span>
       </h2>
 
@@ -1063,7 +1073,7 @@ a {
           </button>
           <div id="faq1" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
-              Use a reverse phone lookup. Type the number in, and you’ll usually see the person’s name along with
+              Use a reverse phone lookup. Type the number in, and you'll usually see the person's name along with
               extra details like addresses, emails, or past numbers.
             </div>
           </div>
@@ -1137,7 +1147,22 @@ a {
           </button>
           <div id="faq6" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
-              Yes. Searchbug gives new users one free search, doesn’t force subscriptions, and only charges when
+              Yes. Searchbug gives new users one free search, doesn't force subscriptions, and only charges when
+              results are found.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ ITEM -->
+        <div class="faq-item">
+          <button class="faq-header" data-toggle="collapse" data-target="#faq6">
+            <span class="faq-icon">&#9656;</span>
+            How much does a Searchbug Reverse Phone Lookup cost?
+
+          </button>
+          <div id="faq6" class="collapse" data-parent="#faqAccordion">
+            <div class="faq-body">
+              Yes. Searchbug gives new users one free search, doesn't force subscriptions, and only charges when
               results are found.
             </div>
           </div>
