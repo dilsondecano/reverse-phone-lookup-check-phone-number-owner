@@ -15,34 +15,10 @@
   <link rel="stylesheet" href="app3.css">
 
 
-  <style>  
+  <style>
 
-    @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(/fonts/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  font-display: swap;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(/fonts/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  font-display: swap;
-}
 
 * {
     font-family: "Open Sans", sans-serif;
@@ -117,6 +93,14 @@ a {
 
     .heading-2-orange {
       color: #ee8a1d !important;
+      font-size: 43px !important;
+      font-weight: 700 !important;
+      margin: 0;
+      text-align: center;
+    }
+
+    .heading-2-orange-2 {
+      color: #ffb64f !important;
       font-size: 43px !important;
       font-weight: 700 !important;
       margin: 0;
@@ -415,6 +399,7 @@ a {
 
       #heading-1,
       .heading-2-orange,
+      .heading-2-orange-2,
       .heading-2-dark,
       .heading-2-light {
         font-size: 27px !important;
@@ -431,15 +416,14 @@ a {
         font-size: 16px !important
       }
     }
-
-      .sb-why-rpl-list,
+    .sb-why-rpl-list,
     .how-reverse-phone-lookup-col {
       border: 2px solid #d5d3d2 !important;
       padding: 3rem 1rem;
       border-radius: 2rem;
       background: #fff
     }
-    
+
 
     #sb-what-rpl li {
       color: #505050;
@@ -450,7 +434,7 @@ a {
       font-size: 32px !important;
       text-align: left;
     }
-    
+
 
     #sb-why-rpl li,
     #sb-why-rpl p {
@@ -465,6 +449,14 @@ a {
       font-weight: 700;
     }
 
+    #sb-why-rpl li {
+      margin: 1.5rem 0
+    }
+
+     #sb-how-rpl li {
+      margin: 1rem 0
+    }    
+
     #sb-other-rpl h2 {
       font-size: 20px;
       font-weight: bold;
@@ -475,12 +467,12 @@ a {
     }
 
     #sb-other-rpl li {
-      font-size: 20px;
+      font-size: 20px;      
     }
 
     #sb-other-rpl .sb-other-rpl-col-1 li {
       color: #505050;
-    }    
+    }
 
     .customer-reverse-phone-lookup {
       display: flex;
@@ -516,7 +508,7 @@ a {
         display: none;
       }
 
-      
+
 
       .view-sample-report {
         margin-top: 0.5rem
@@ -542,7 +534,7 @@ a {
       .use-reverse-phone-lookup-form .row .col-md-6 {
         padding: 0.5rem 0
       }
-      
+
       #sb-other-rpl .sb-other-rpl-col-1 {
         background: #f5f5f5;
         padding: 1rem 0;
@@ -601,9 +593,10 @@ a {
             <div class="row">
               <div class="col-md-7">
                 <form action="/submit" method="post" siq_id="autopick_150">
-                  <input type="text" id="name" name="name" placeholder="Enter any U.S. phone number" class="sb-form-control mb-md-3">
+                  <input type="text" id="name" name="name" placeholder="Enter any U.S. phone number"
+                    class="sb-form-control mb-md-3">
                 </form>
-                
+
               </div>
               <div class="col-md-5 d-flex justify-content-start align-items-start gap-2 flex-column">
                 <div class="mt-3 mt-md-0">
@@ -671,7 +664,7 @@ a {
       <div class="row gap-5">
         <div class="col-md how-reverse-phone-lookup-col">
           <div class="how-reverse-phone-lookup-list">
-            <h2 class="heading-2-orange">How to Know Who Owns a Phone Number</h2>           
+            <h3 class="heading-3-orange text-center">How to Know Who Owns a Phone Number</h3>
             <ul class="mt-4 sb-text-primary">
               <li>Create a free Searchbug Account</li>
               <li>Enter a full 10-digit phone number in any format and click Search.</li>
@@ -682,11 +675,11 @@ a {
         </div>
         <div class="col-md how-reverse-phone-lookup-col">
           <div class="how-reverse-phone-lookup-list">
-            <h2 class="heading-2-orange">How Much is a Reverse Phone Lookup?</h2>
+            <h3 class="heading-3-orange text-center">How Much is a Reverse Phone Lookup?</h3>
             <ul class="mt-4 sb-text-primary">
               <li>$1.95 or 195 <a href="https://www.searchbug.com/info/search-tokens/" target="new_window">$T (Search
-                  Tokens)</a></li>              
-              <li>There is no charge if information is not found.</li>              
+                  Tokens)</a></li>
+              <li>There is no charge if information is not found.</li>
               <li>No Monthly Memberships, Subscriptions, or Minimums</li>
               <li>What are <a href="https://www.searchbug.com/info/search-tokens/" target="new_window">Search Tokens
                   ($T)</a>? They are needed to pay for lookups.</li>
@@ -703,8 +696,8 @@ a {
   <!-- What Reverse Phone Lookup Section -->
   <section class="padding-tb-50" id="sb-what-rpl">
     <div class="container">
-      
-      <h2 class="heading-2-dark">What Results Can You Get from Reverse Phone Lookup?</h2>
+
+      <h2 class="heading-2-orange">What Results Can You Get from Reverse Phone Lookup?</h2>
       <h3 class="mt-4 heading-3-dark text-center">Searchbug's Reverse Phone Number Lookup typically includes</h3>
       <div class="row">
         <div class="col-md text-center">
@@ -713,15 +706,15 @@ a {
             class="img-fluid" alt="">
         </div>
 
-      </div>    
+      </div>
     </div>
     <div class="container">
-            <div class="row">
-              <div class="col-md-2"></div>
+      <div class="row">
+        <div class="col-md-2"></div>
         <div class="col-md-8">
           <div class="list-green-check2">
             <ul class="mt-4">
-                         <li>Complete name and aliases</li>
+              <li>Complete name and aliases</li>
               <li>Age of person assocated with the number</li>
               <li>Email address (if available)</li>
               <li>Recent other phone numbers with their line type (wireless or landline)</li>
@@ -741,32 +734,32 @@ a {
     </div>
   </section>
 
-<section class="padding-tb-50 sb-bg-dark">
-  <div class="container">
-    <div class="row">
-    <h2 class="heading-2-orange">Perform a Reverse Phone Number Search Using Searchbug's Tool </h2>
-    <div class="col-md-2"></div>
-    <div class="col-md-8">      
-    
-              <div class="video-container">
+  <section class="padding-tb-50 sb-bg-dark">
+    <div class="container">
+      <div class="row">
+        <h2 class="heading-2-orange-2">Perform a Reverse Phone Number Search <br />Using Searchbug's Tool </h2>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+          <div class="video-container">
             <iframe src="https://www.youtube.com/embed/xA9gD1HYkzk?si=LWfL6Ekzaj-jwriK" title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-  </div>
-  <div class="col-md-2">
-    
-  </div>
-  </div>
-  </div>
-</section>
+        </div>
+        <div class="col-md-2">
 
-<!-- Other Reverse Phone Lookup Section -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Reverse Phone Lookup Section -->
   <section class="padding-tb-50" id="sb-other-rpl">
     <div class="container">
       <div>
-        <h2>OTHER PHONE NUMBER SEARCH VS SEARCHBUG PREMIUM LOOKUP</h2>
+        <h2 class="heading-2-dark">Other Phone Number Search <span class="heading-2-orange">vs</span> Searchbug Premium Lookup</h2>
       </div>
       <div class="row">
         <div class="col-md sb-other-rpl-col-1">
@@ -851,7 +844,7 @@ a {
         </div>
 
       </div>
- 
+
       <div class="row">
         <div class="col">
           <p class="mt-4 text-center">If someone you plan to do business with or legitimately gives you their phone
@@ -867,7 +860,8 @@ a {
   <section class="sb-bg-dark padding-tb-50" id="sb-testimonial">
     <div class="container">
       <h2 class="heading-2-light">Here is what our customers say about our
-<br />Reverse Phone Lookup Tool.</h2>
+        <br />Reverse Phone Lookup Tool.
+      </h2>
       <div class="row align-items-stretch">
         <div class="col-md sb-testimonial-col-1">
           <div class="h-100 d-flex flex-column justify-content-between">
@@ -887,7 +881,8 @@ a {
         <div class="col-md sb-testimonial-col-2">
           <div class="h-100 d-flex flex-column justify-content-between">
             <div>
-              <p>"I used Searchbug recently and was very satisfied. With the services offered and with the customer service."</p>
+              <p>"I used Searchbug recently and was very satisfied. With the services offered and with the customer
+                service."</p>
             </div>
             <div class="customer-reverse-phone-lookup">
               <div><img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/reverse-phone-lookup-user-1.png"
@@ -902,7 +897,8 @@ a {
         <div class="col-md sb-testimonial-rpl-col-3">
           <div class="h-100 d-flex flex-column justify-content-between">
             <div>
-              <p>"The young lady that assisted me was very polite and helpful. I would recommend this service to others for future lookups."</p>
+              <p>"The young lady that assisted me was very polite and helpful. I would recommend this service to others
+                for future lookups."</p>
             </div>
             <div class="customer-reverse-phone-lookup">
               <div><img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/reverse-phone-lookup-user-1.png"
@@ -977,9 +973,9 @@ a {
           </div>
         </div>
       </div>
-          <div class="text-center">
-        <a href="https://www.searchbug.com/info/" target="new_window"><button
-            class="sb-button-orange" style="margin-left: 0;">Read more Blogs</button></a>
+      <div class="text-center">
+        <a href="https://www.searchbug.com/info/" target="new_window"><button class="sb-button-orange"
+            style="margin-left: 0;">Read more Blogs</button></a>
       </div>
     </div>
   </section>
@@ -1042,13 +1038,13 @@ a {
     </div>
   </section>
 
-  
 
-  
 
-  
 
-  
+
+
+
+
 
   <!-- FAQs -->
   <section class="padding-tb-50 bg-light" id="sb-faq">
@@ -1147,7 +1143,7 @@ a {
           </div>
         </div>
 
-   
+
 
       </div>
     </div>
@@ -1224,4 +1220,5 @@ a {
 
 
 </body>
+
 </html>
