@@ -4,417 +4,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reverse Phone Lookup Check Phone Number Owner</title>
+  <title> People Finder Search by Name, Address, or Phone</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
-  <!-- Optional: your custom styles -->
-  <link rel="stylesheet" href="app3.css">
+  <link rel="stylesheet" href="/app3.css" />
+    <link rel="stylesheet" href="/dcf-responsive-table-5.css" />
 
 
   <style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
-* {
-    font-family: "Open Sans", sans-serif;
-}
-
-a {
-  color: #ee8a1d;
-  text-decoration: none 
-}
-
-  a:hover {
-    color: #ee8a1d;
-    text-decoration: underline; 
-  }
-
-
-
-.container {
-      max-width: 1410px !important;
-    }
-
-    /* CSS Components */
-    .padding-tb-50 {
-      padding: 50px 0px;
-    }
-
-    .sb-bg-dark {
-      background: #505050 !important
-    }
-
-    .sb-bg-light {
-      background: #DDDDDC !important
-    }
-
-    .sb-bg-light-2 {
-      background: #eeeeee !important
-    }
-
-    .sb-bg-orange {
-      background: #ee8a1d
-    }
-
-    .sb-bg-dark {
-      background: #373737
-    }
-
-    .sb-image-center {
-      display: block;
-      margin: 0 auto;
-    }
-
-    #heading-1 {
-      font-size: 43px !important;
-      color: #fff !important;
-      font-weight: 700 !important;
-      text-align: center;
-    }
-
-    .heading-2-light {
-      color: #fff;
-      font-size: 43px !important;
-      font-weight: 700 !important;
-      text-align: center;
-    }
-
-    .heading-2-dark {
-      color: #505050;
-      font-size: 43px !important;
-      font-weight: 700 !important;
-      text-align: center;
-    }
-
-    .heading-2-orange {
-      color: #ee8a1d !important;
-      font-size: 43px !important;
-      font-weight: 700 !important;
-      margin: 0;
-      text-align: center;
-    }
-
-    .heading-2-orange-2 {
-      color: #ffb64f !important;
-      font-size: 43px !important;
-      font-weight: 700 !important;
-      margin: 0;
-      text-align: center;
-    }
-
-    .heading-3-light {
-      color: #fff !important;
-      font-size: 27px !important;
-      font-weight: 700 !important;
-
-    }
-
-    .heading-3-dark {
-      color: #505050;
-      font-size: 27px !important;
-      font-weight: 700 !important;
-
-    }
-
-    .heading-3-orange {
-      color: #ee8a1d !important;
-      font-size: 27px !important;
-      font-weight: 700 !important;
-      margin: 0;
-
-    }
-
-    .sb-text-primary {
-      color: #505050 !important;
-      font-size: 20px !important;
-    }
-
-    .sb-text-light {
-      color: #fff !important;
-      font-size: 20px !important;
-    }
-
-    .list-green-check2 ul li {
-      background: url(https://www.searchbug.com/info/wp-content/uploads/2024/10/sb-check-circle-icon.png) no-repeat;
-      background-size: 25px 25px;
-      padding: 0px 0px 6px 40px;
-      list-style: none;
-      margin-left: 0;
-      margin-top: 9px;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      margin-bottom: 2rem !important;
-    }
-
-    .sb-spacer-1 {
-      height: 1rem;
-    }
-
-    .sb-spacer-2 {
-      height: 2rem;
-    }
-
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #000;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+    table {
       width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .sb-button-orange {
-      border: 2px solid rgba(0, 0, 0, 0.1);
-      background-color: #ed881c;
-      color: #fff;
-      font-size: 20px;
-      line-height: 24px;
-      text-transform: uppercase;
-      padding: 10px 30px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: all 500ms;
-    }
-
-    .sb-button-orange:hover {
-      border-color: rgba(0, 0, 0, 0.2);
-      box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
-      opacity: 0.8;
-
-    }
-
-    .sb-button-orange-2 {
-      border: 2px solid rgba(0, 0, 0, 0.1);
-      background-color: #ed881c;
-      color: #fff;
-      font-size: 14px;
-      line-height: 24px;
-      text-transform: uppercase;
-      padding: 6px 1rem;
-      cursor: pointer;
-      border-radius: 0;
-      transition: all 500ms;
-    }
-
-    .sb-button-orange-2:hover {
-      border-color: rgba(0, 0, 0, 0.2);
-      box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
-      opacity: 0.8;
-
-    }
-
-    .sb-button-gray {
-      color: #ffffff;
-      font-size: 20px;
-      line-height: 24px;
-      text-transform: uppercase;
-      padding: 10px 30px;
-      cursor: pointer;
-      border-radius: 25px;
-      background-color: #868e96;
-
-    }
-
-    .sb-button-gray:hover {
-      background-color: #727b84;
-      border-color: #6c757d;
-    }
-
-    .button-orange3 {
-      background: #ffb64f;
-      color: #fff !important;
-      font-size: 14px;
-      padding: 0.5rem;
-      transition: 0.4s;
-      cursor: pointer;
-    }
-
-    .button-orange3:hover {
-      background: #ee8a1d;
     }
 
 
-    /* CSS */
-    #sb-testimonial .row .col-md>div {
-      padding: 1.5rem;
-      background-color: #ffffff;
-      border-radius: 1rem;
-    }
-
-    #sb-testimonial p {
-      font-size: 1rem;
+    #sb-what-pf h4 {
       color: #505050;
-      
+      font-size: 24px;
+      margin-top: 1rem;
+      text-align: center;
     }
 
-    .sb-testimonial-name {
+    #sb-related-tools-pf p {
+      color: #505050;
+      font-size: 20px;
+    }
+
+    .sb-rounded-box-gray {
+      background: #f5f5f5;
+      border-radius: 1rem;
+      border: 2px solid #dedede;
+      padding: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .sb-rounded-box-form-gray {
+      background: #f5f5f5;
+      border-radius: 1rem;
+      border: 2px solid #dedede;
+      padding: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    #sb-people-search-pf h4 {
+      font-size: 24px;
       font-weight: bold;
-      color: #505050
+      color: #505050;
     }
 
-    .sb-testimonial-review {
-      font-style: italic;
-      color: #505050
-    }   
+    #sb-people-search-pf p,
+    #sb-people-search-pf li {
+      font-size: 20px;
+      color: #505050;
+    }
 
+    #sb-what-info-pf table,
+    #sb-what-info-pf th,
+    #sb-what-info-pf td {
+      border: 3px solid #fff;
+      border-collapse: collapse;
+      padding: 1rem;
+    }
 
+    #sb-what-info-pf th {
+      background: #ee8a1d;
+      font-size: 24px;
+      text-align: center;
+      color: #fff;
+    }
 
+    #sb-what-info-pf tr {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    #sb-vs-competitors-pf table,
+    #sb-vs-competitors-pf th,
+    #sb-vs-competitors-pf td {
+      border: 0.5rem solid white;
+      border-collapse: collapse;
+      padding: 1rem;
+
+    }
+
+    #sb-vs-competitors-pf th {
+      background: #ee8a1d;
+      color: #fff;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    #sb-vs-competitors-pf td:first-child {
+      background: #EDEDED;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #sb-vs-competitors-pf td {
+      background: #F5F5F5;
+      color: #505050;
+    }
+
+    #sb-why-use-pf,
+    #sb-best-people-search-pf {
+      color: #505050;
+    }
+
+    #sb-why-use-pf .row {
+      gap: 2rem;
+    }
+
+    #sb-why-use-pf h3 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .sb-form-label {
+      margin: 0;
+      color: #505050;
+      font-size: 16px;
+    }
 
     .sb-form-control,
     .sb-form-select {
-      border: 1px solid rgba(0, 0, 0, .15);
-      box-shadow: inset 1px 2px 3px 1px rgba(0, 0, 0, 0.09);
-      border-radius: 6px !important;
-      margin: 0 !important;
-      padding: 3px 3px 3px 20px !important;
-      height: 50px;
-      width: 100%;
+      border: 1px solid #f7941d;
+      border-radius: 6px;
     }
 
-    #sb-faq {
-    background: #fff7ec;
-    }
-
-    .faq-item {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 0;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  border: 1px solid #f6e6d2;
-  overflow: hidden;
-}
-
-.faq-header {
-  width: 100%;
-  background: none;
-  border: none;
-  text-align: left;
-  padding: 18px 20px;
-  font-size: 20px;
-  font-weight: 500;
-  color: #505050;  
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  outline: none;
-}
-
-.faq-header.active {
-  background: #fbead4;
-  font-weight: 600;
-}
-
-.faq-icon {
-  color: #ff8b00;
-  font-size: 20px;
-  margin-right: 15px;
-  transition: 0.3s;
-}
-
-.faq-icon.rotate {
-  transform: rotate(90deg);
-}
-
-.faq-body {
-  padding: 18px 25px;
-  background: #fff;
-  font-size: 20px;
-  color: #444;
-  border-top: 1px solid #f1d9bd;
-}
-
-.faq-body p {
-  margin: 0;
-}
-#sb-blogs a {
-    color: #fff;
-    transition: 0.5s
-}
-
-#sb-blogs a:hover {
-    color: #ee8a1d;
-          text-decoration: none !important;
-
-}
-
-    #sb-blogs-rpl h5 {
-      font-size: 18px;
-      margin-top: 1rem;
-    }
-
-
-    #sb-cta img {
-      width: 250px;
-      height: auto;
+    #sb-heading p {
+      color: #fff;
     }
 
     /* 768 Media Screen */
     @media only screen and (max-width: 768px) {
-
-
-
-      .sb-testimonial-col-1,
-      .sb-testimonial-col-2 {
-        margin-bottom: 1rem
+      .sb-rounded-box-form-gray {
+        padding: 1rem;
       }
-
     }
 
     /* 576 Media Screen */
     @media only screen and (max-width: 576px) {
 
-      .faq-header {
-    font-size: 18px;
-}
-
-.faq-body {
-    font-size: 16px;
-}
-
-      #sb-blogs h5 {
-        font-size: 16px;
+      #sb-what-info-pf th {
+        font-size: 1rem
       }
 
-      .sb-button-orange,
-      .sb-button-gray {
-        font-size: 14px;
-      }
-
-      .sb-button-orange-2 {
-        font-size: 10px;
-      }
 
       #heading-1,
       .heading-2-orange,
-      .heading-2-orange-2,
       .heading-2-dark,
       .heading-2-light {
         font-size: 27px !important;
-      }
-
-      .heading-3-dark {
-        font-size: 20px !important
       }
 
       .sb-text-light,
@@ -425,159 +166,6 @@ a {
       }
     }
 
-    
-    .sb-why-rpl-list,
-    .how-reverse-phone-lookup-col {
-      border: 2px solid #d5d3d2 !important;
-      padding: 3rem 1rem;
-      border-radius: 2rem;
-      background: #fff
-    }
-
-
-    #sb-what-rpl li {
-      color: #505050;
-    }
-
-
-    #sb-use-rpl h2 {
-      font-size: 32px !important;
-      text-align: left;
-    }
-
-
-    #sb-why-rpl li,
-    #sb-why-rpl p {
-      color: #505050;
-      font-size: 20px;
-    }
-
-    #sb-why-rpl h3 {
-      color: #ee8a1d;
-      font-size: 27px;
-      text-align: center;
-      font-weight: 700;
-    }
-
-    #sb-why-rpl li {
-      margin: 1.5rem 0
-    }
-
-     #sb-how-rpl li {
-      margin: 1rem 0
-    }    
-
-    #sb-other-rpl h2 {
-      font-size: 20px;
-      font-weight: bold;
-      color: #505050;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      border: 1px solid #f6e6d2;
-    }
-
-    #sb-other-rpl li {
-      font-size: 20px;      
-    }
-
-    #sb-other-rpl .sb-other-rpl-col-1 li {
-      color: #505050;
-    }
-
-    .customer-reverse-phone-lookup {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    #sb-other-rpl h2 {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 1rem;
-      width: 60%;
-      margin: 0 auto;
-    }
-
-    .use-reverse-phone-lookup-form {
-      background: #F7F7F7;
-      padding: 2rem;
-      border-radius: 1rem;
-    }
-
-    .use-reverse-phone-lookup-form .col-md-6 {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-
-
-    /* 768 Media Screen */
-    @media only screen and (max-width: 768px) {
-
-      br {
-        display: none;
-      }
-
-
-
-      .view-sample-report {
-        margin-top: 0.5rem
-      }
-
-      #sb-other-rpl h2 {
-        width: 100%;
-      }
-
-      .how-reverse-phone-lookup-col {
-        border: 2px solid #fff !important;
-        padding: 0
-      }
-
-      .how-reverse-phone-lookup-list {
-        border: 2px solid #d5d3d2 !important;
-        padding: 3rem 1rem;
-        border-radius: 2rem;
-        margin: 1rem;
-      }
-
-
-      .use-reverse-phone-lookup-form .row .col-md-6 {
-        padding: 0.5rem 0
-      }
-
-      #sb-other-rpl .sb-other-rpl-col-1 {
-      
-        padding: 1rem 0;
-      }
-
-      #sb-other-rpl .sb-other-rpl-col-2 {
-      
-        padding: 2rem 0;
-      }
-
-    }
-
-    /* 576 Media Screen */
-    @media only screen and (max-width: 576px) {
-      #sb-use-rpl h2 {
-        font-size: 21px !important;
-      }
-
-      #sb-faq-rpl .card-header button {
-        white-space: normal;
-        font-size: 16px;
-      }
-
-      #sb-faq-rpl .card-body {
-        font-size: 16px;
-      }
-
-      .customer-reverse-phone-lookup {
-        font-size: 1rem;
-      }
-
-
-    }
   </style>
 
 </head>
@@ -585,305 +173,565 @@ a {
 <body>
 
 
+
   <!-- Header Section -->
-  <section class="padding-tb-50 sb-bg-orange">
+  <section class="padding-tb-50 sb-bg-orange" id="sb-heading">
     <div class="container">
-      <h1 id="heading-1">Reverse Phone Lookup <br />Check Phone Number Owner</h1>
+      <h1 id="heading-1"> People Finder Search by Name, Address, or Phone</h1>
+      <p class="text-center">(aka people search), tool to search public records, find people by name and address,
+        and<br />
+        verify contact details. It's fast, accurate, and trusted by businesses and consumers.</p>
     </div>
   </section>
 
-  <!-- Use Reverse Phone Lookup Section -->
-  <section class="padding-tb-50" id="sb-use-rpl">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 order-2 order-md-1">
-          <h2 class="heading-2-orange">Use our Reverse Phone Lookup tool to see who owns a number, check the caller ID,
-            or search phone details instantly.</h2>
-          <div class="use-reverse-phone-lookup-form container-fluid mt-4">
-            <div class="row">
-              <div class="col-md-7">
-                <form action="/submit" method="post" siq_id="autopick_150">
-                  <input type="text" id="name" name="name" placeholder="Enter any U.S. phone number"
-                    class="sb-form-control mb-md-3">
-                </form>
 
+  <section class="padding-tb-50">
+    <div class="container">
+      <div class="sb-search-form sb-rounded-box-form-gray">
+        <form>
+          <div class="row g-3 mt-4">
+            <!-- First Row -->
+            <div class="col-md-4">
+              <div>
+                <label class="sb-form-label">First Name</label>
+                <input type="text" class="sb-form-control" placeholder="">
               </div>
-              <div class="col-md-5 d-flex justify-content-start align-items-start gap-2 flex-column">
-                <div class="mt-3 mt-md-0">
-                  <a href="https://www.searchbug.com/api/signup.aspx" target="new_window"><button
-                      class="btn sb-button-orange">Search</button></a> &nbsp; <a href="#" target="new_window"><button
-                      class="btn sb-button-gray">Clear</button></a>
+            </div>
+            <div class="col-md-4">
+              <div>
+                <label class="sb-form-label">Last Name</label>
+
+                <input type="text" class="sb-form-control" placeholder="">
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div>
+                <label class="sb-form-label">Date of Birth</label>
+                <input type="date" class="sb-form-control">
+              </div>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="row g-3 mt-4">
+            <div class="col-12">
+              <div>
+                <label class="sb-form-label">Address</label>
+                <input type="text" class="sb-form-control" placeholder="">
+              </div>
+            </div>
+          </div>
+
+          <!-- City / State / ZIP -->
+          <div class="row g-3 mt-4">
+            <div class="col-md-4">
+              <div>
+                <label class="sb-form-label">City</label>
+                <input type="text" class="sb-form-control" placeholder="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div>
+                <label class="sb-form-label">State</label>
+                <div>
+                  <select class="sb-form-select">
+                    <option value="">Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
                 </div>
               </div>
             </div>
-            <div class="row mt-3">
-              <div class="col-md-7">
-                <div class="view-sample-report">
-                  <a href="https://www.searchbug.com/api/signup.aspx" target="new_window"><button
-                      class="btn sb-button-orange-2">View Sample Results</button></a> &nbsp;&nbsp;<a href="#"
-                    target="new_window"><button class="btn sb-button-orange-2">See Pricing</button></a>
-                </div>
-              </div>
-              <div class="col-md-5">
+            <div class="col-md-4">
+              <div>
+                <label class="sb-form-label">ZIP Code</label>
+                <input type="text" class="sb-form-control" placeholder="">
               </div>
             </div>
           </div>
-          <div>
 
-            <div>
-              <p class="mt-4 sb-text-primary"><strong>NO CHARGE, IF WE DO NOT FIND INFORMATION</strong></p>
-
-              <p class="sb-text-primary">Ideal for skip tracing, real estate, lead generation, verifying unknown
-                callers, or updating old contact info.</p>
-
-              <p class="sb-text-primary">It's one of the most accurate and detailed phone search tools available with no
-                subscription required.</p>
+          <!-- Phone / Email -->
+          <div class="row g-3 mt-4">
+            <div class="col-md-4">
+              <div>
+                <label class="sb-form-label">Phone Number</label>
+                <input type="text" class="sb-form-control" placeholder="+1">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div>
+                <label class="sb-form-label">Email Address</label>
+                <input type="email" class="sb-form-control" placeholder="youremailaddress@gmail.com">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 order-1 order-md-2">
-          <img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/Reverse-Phone-Lookup-tool.png"
-            class="img-fluid" alt="">
-        </div>
-      </div>
-  </section>
 
-  <section class="padding-tb-50 sb-bg-light" id="sb-what-rpl">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="https://www.searchbug.com/info/wp-content/uploads/2025/11/why-need-reverse-phone-lookup.png"
-            class="img-fluid sb-image-center" alt="">
-        </div>
-        <div class="col-md-8">
-          <h2 class="heading-3-dark">What is Reverse Phone Lookup?</h2>
-          <p class="sb-text-primary">A Reverse Phone Lookup lets you search phone number details by entering a 10-digit
-            number instead of a name. It's useful if you want to know who owns a number or if you're trying to find a
-            current number to replace an old or outdated one.</p>
-          <h2 class="heading-3-dark mt-4">Why you need to use it?</h2>
-          <p class="sb-text-primary">Some sites offer a free phone number search, but results are often limited. A
-            premium
-            phone directory lookup by number like Searchbug provides more complete and accurate records for personal
-            checks or business use.</p>
-        </div>
-  </section>
+          <!-- SSN / Driver's License -->
+          <div class="row g-3 mt-4">
+            <div class="col-md-6">
+              <div>
+                <label class="sb-form-label">SSN Number</label>
+                <input type="text" class="sb-form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <label class="sb-form-label">Driver's License</label>
+                <input type="text" class="sb-form-control">
+              </div>
+            </div>
+          </div>
 
-  <!-- How Reverse Phone Lookup Section -->
-  <section class="padding-tb-50 sb-bg-dark" id="sb-how-rpl">
-    <div class="container">
-      <div class="row gap-5">
-        <div class="col-md how-reverse-phone-lookup-col">
-          <div class="how-reverse-phone-lookup-list">
-            <h3 class="heading-3-orange text-center">How to Know Who Owns a Phone Number</h3>
-            <ul class="mt-4 sb-text-primary">
-              <li>Create a free Searchbug Account</li>
-              <li>Enter a full 10-digit phone number in any format and click Search.</li>
-              <li>Sign up for a free Searchbug account and get one free phone number search or other instant lookup</li>
-              <li>Available for first-time users who complete the sign up process</li>
-            </ul>
+          <!-- Buttons -->
+          <div class="col-12 text-center mt-4">
+            <button type="submit" class="btn sb-button-orange px-4 me-2">Search now</button>
+            <button type="reset" class="btn sb-button-gray px-4">Clear</button>
           </div>
-        </div>
-        <div class="col-md how-reverse-phone-lookup-col">
-          <div class="how-reverse-phone-lookup-list">
-            <h3 class="heading-3-orange text-center">How Much is a Reverse Phone Lookup?</h3>
-            <ul class="mt-4 sb-text-primary">
-              <li>$1.95 or 195 <a href="https://www.searchbug.com/info/search-tokens/" target="new_window">$T (Search
-                  Tokens)</a></li>
-              <li>There is no charge if information is not found.</li>
-              <li>No Monthly Memberships, Subscriptions, or Minimums</li>
-              <li>What are <a href="https://www.searchbug.com/info/search-tokens/" target="new_window">Search Tokens
-                  ($T)</a>? They are needed to pay for lookups.</li>
-              <li>New users are eligible to get 500 $T free with any <a
-                  href="https://www.searchbug.com/info/search-tokens/" target="new_window">Search Tokens</a> purchase.
-              </li>
-            </ul>
-          </div>
-        </div>
+
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- What Reverse Phone Lookup Section -->
-  <section class="padding-tb-50" id="sb-what-rpl">
+  <!-- What Is a People Finder? Section -->
+  <section class="padding-tb-50 sb-bg-light-2" id="sb-what-pf">
     <div class="container">
-
-      <h2 class="heading-2-orange">What Results Can You Get from Reverse Phone Lookup?</h2>
-      <h3 class="mt-4 heading-3-dark text-center">Searchbug's Reverse Phone Number Lookup typically includes</h3>
+      <h2 class="heading-2-orange">What Is a People Finder?</h2>
       <div class="row">
-        <div class="col-md text-center">
-          <img
-            src="https://www.searchbug.com/info/wp-content/uploads/2025/10/SB-Reverse-Phone-Number-Lookup-Includes.png"
-            class="img-fluid" alt="">
+        <div class="col-lg order-2 order-md-1">
+
+          <p class="sb-text-primary">A people finder is an online tool that lets you quickly gather information
+            about someone. Instead of relying on guesswork or scattered search
+            results, you can look up someone online through databases that provide
+            phone numbers, addresses, emails, and background details.</p>
+
+          <p class="sb-text-primary">Most people search platforms are designed to help you search for
+            someone in the US, whether you're trying to reconnect with an old friend,
+            verify a new contact, or confirm details before doing business. These
+            tools often make it possible to check public records online, including
+            property ownership, court filings, and previous addresses, which adds an
+            extra layer of reliability.</p>
+
+          <p class="sb-text-primary">If you need to know how to find someone's contact details, a people
+            finder can show you current phone numbers, emails, or mailing
+            addresses. Searchbug allows you to find people by name and address,
+            making it easier to update your records or reach the right person without
+            wasting time on outdated information.</p>
         </div>
-
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <div class="list-green-check2">
-            <ul class="mt-4">
-              <li>Complete name and aliases</li>
-              <li>Age of person assocated with the number</li>
-              <li>Email address (if available)</li>
-              <li>Recent other phone numbers with their line type (wireless or landline)</li>
-              <li>Relatives' information, including their age</li>
-              <li>Present address along with a three-year address history including reported dates</li>
-              <li>Line type - landline, cell phone (wireless) or VoIP Line</li>
-              <li>LNP (local number portabilty) check to see if the number was ported (moved) to another carrier (e.g.
-                like if they switched from Verizon to T-Mobile).</li>
-              <li>Current Carrier (phone company) name (e.g. AT&T, Broadcom, U.S. Cellular, or one of many MVNOs like US
-                Mobile)</li>
-              <li>Location (where the phone originated), time zone, area code info</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="padding-tb-50 sb-bg-dark">
-    <div class="container">
-      <div class="row">
-        <h2 class="heading-2-orange-2">Perform a Reverse Phone Number Search <br />Using Searchbug's Tool </h2>
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-
+        <div class="col-lg order-1 order-md-2">
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/xA9gD1HYkzk?si=LWfL6Ekzaj-jwriK" title="YouTube video player"
+            <iframe src="https://www.youtube.com/embed/Czs3AhsGMBo?si=L8J9n6TfSDHvB8oe" title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-        </div>
-        <div class="col-md-2">
-
+          <h4> How to Use the People Finder Tool </h4>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Other Reverse Phone Lookup Section -->
-  <section class="padding-tb-50" id="sb-other-rpl">
+  <!-- Searchbug's People Search Section -->
+  <section class="padding-tb-50 list-green-check2" id="sb-people-search-pf">
     <div class="container">
       <div>
-        <h2 style="color: #505050">Other Phone Number Search <span style="color: #ee8a1d">vs</span> Searchbug Premium Lookup</h2>
+        <h2 class="heading-2-orange">Searchbug's People Search</h2>
+        <p>You don't always need a full name to begin. Reverse people searches can be done with other details, making it
+          easier to look up someone online even if your information is limited.</p>
       </div>
-      <div class="row">
-        <div class="col-md sb-other-rpl-col-1">
-
-          <div class="row align-items-center">
-            <div class="col-4">
-              <img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/other-phone-number-search-1.png"
-                alt="Other Reverse Phone Lookup" id="other-reverse-phone-lookup-img" class="img-fluid">
-            </div>
-            <div class="col-8">
-              <ul class="sb-text-primary">
-                <li>Often requires sign-up or subscription</li>
-                <li>Bundled with services you don't need</li>
-                <li>Limited or incomplete results</li>
-              </ul>
-            </div>
+      <h3 class="heading-3-orange fst-italic">Step-by-Step Guide</h3>
+      <div class="sb-rounded-box-gray">
+        <h4>Step 1: Enter What You Know</h4>
+        <p>Start with all the details you have—name, address, or phone number.</p>
+        <p>If you don't get results, try fewer details. For example:</p>
+        <div class="row">
+          <div class="col-md">
+            <ul>
+              <li>Full name + address</li>
+              <li>Full name + city (avoid common names)</li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li>Address only (remove apartment/unit number if no match)</li>
+              <li>Phone number only</li>
+            </ul>
           </div>
         </div>
+      </div>
+      <div class="sb-rounded-box-gray">
+        <h4>Step 2: Review the Results</h4>
+        <p>Once you run the search, check the results to confirm the person's identity or update your contact list.</p>
+        <p>You Can Search Using:</p>
+        <div class="row">
+          <div class="col-md">
+            <ul>
+              <li>Phone Number</li>
+              <li>Street Address + City + State</li>
+              <li>Email Address</li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
+              <li>Social Security Number (Add-On Required)</li>
+              <li>Driver's License Number (Add-On Required)</li>
+            </ul>
+          </div>
+        </div>
+        <p>Best Search Combinations</p>
+        <div class="row">
+          <div class="col-md">
+            <ul>
+              <li>First + Last Name + Date of Birth</li>
+              <li>Last Name + Street + City + State</li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul>
 
-        <div class="col-md sb-other-rpl-col-2">
-          <div class="row align-items-center row align-items-center flex-column flex-md-row">
-            <div class="col-md-7">
-              <ul class="sb-text-primary">
-                <li>One free search for new users</li>
-                <li>No contracts, no monthly fees</li>
-                <li>Pay only for the lookups you run</li>
-                <li>No charge if no results are found</li>
-              </ul>
-            </div>
-            <div class="col-md-5 text-center">
-              <img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/other-phone-number-search-2-1.png"
-                alt="Other Reverse Phone Lookup 2" id="other-reverse-phone-lookup-img2" class="img-fluid">
-            </div>
+              <li>First + Last Name + State</li>
+              <li>Last Name + City + State</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Tip: When searching by name, being specific avoids broad or inaccurate results. The street address should
+          include a house number—searches by street name only won't display all residents. You can also use an old phone
+          number or past address to find updated or more recent contact details, like a newer address or other
+          associated phone numbers.
+        </p>
+      </div>
+      <div class="sb-rounded-box-gray">
+        <div class="row">
+          <div class="col-md-9">
+            <h4>Are you a Developer?</h4>
+            <p>Integrate the same verified data with our <strong>People Search API</strong> for bulk or automated
+              lookups.</p>
+          </div>
+          <div class="col-md-3 d-flex align-items-center">
+            <a href="https://www.searchbug.com/api/signup.aspx" target="new_window"><button
+                class="btn sb-button-orange">Try Now</button></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Reverse Phone Lookup Section -->
-  <section class="padding-tb-50 sb-bg-light-2" id="sb-why-rpl">
+
+  <!-- What Information Can You Get from a People Search Section -->
+  <section class="padding-tb-50 sb-bg-dark" id="sb-what-info-pf">
     <div class="container">
-      <h2 class="heading-2-orange text-center">Why Use a Reverse Phone Lookup Tool?
-      </h2>
-      <p class="sb-text-primary text-center">A reverse phone lookup serves different needs depending on whether you're
-        using it personally or for business.</p>
-      <div class="row align-items-stretch">
-        <div class="col-md-6">
-          <div class="sb-why-rpl-list h-100">
-            <h3>For Personal Use</h3>
-            <ul>
-              <li><strong>Spam and scam protection</strong> - Spot robocalls, telemarketers, or fraud attempts before
-                picking up.</li>
-              <li><strong>Contact verification</strong> - Confirm if a number really belongs to the person you expect.
-              </li>
-              <li><strong>Legitimacy check</strong> - Quickly see if an unknown caller is genuine or suspicious.</li>
-              <li><strong>Peace of mind</strong> - Reduce guesswork when receiving missed calls or texts from unfamiliar
-                numbers.</li>
-              <li><strong>Reconnect with old contacts</strong> - Track down previous numbers tied to friends, family, or
-                acquaintances to find their current phone number and addresses.</li>
-              <li><strong>Fill in gaps</strong> - Complete contact profiles when you come across unknown or saved
-                numbers without names</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 mt-3 mt-md-0">
-          <div class="sb-why-rpl-list h-100">
-            <h3>For Business Use</h3>
-            <ul>
-              <li><strong>Lead follow-up</strong> - Update contact information when a phone number in your CRM turns out
-                to be inaccurate.</li>
-              <li><strong>Data accuracy</strong> - Verify that phone numbers collected from web forms match the correct
-                names and details in your database.</li>
-              <li><strong>Better outreach</strong> - Ensure you're calling or emailing the right person so you don't
-                waste time chasing bad leads.</li>
-              <li><strong>List maintenance</strong> - Keep customer and prospect lists clean, accurate, and up to date
-                for ongoing communication.</li>
-              <li><strong>Relationship tracking</strong> - Identify if a number belongs to someone you met at an event,
-                networking seminar, or other professional setting</li>
-            </ul>
-          </div>
-        </div>
-
+      <h2 class="heading-2-orange-2">What Information Can You Get from a People Search</h2>
+      <p class="sb-text-light">Searchbug's People Search helps you confirm identities, update records, or find missing
+        details in seconds.
+        Here's what you can uncover:</p>
+      <div class="table-responsive">
+        <table class="mt-4">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>Full name and aliases</p>
+              </td>
+              <td>
+                <p>See verified names and any known variations.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Current & Past Addresses</p>
+              </td>
+              <td>
+                <p>Includes up to 3 years of address history with reported dates.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Phone Numbers & Line Type</p>
+              </td>
+              <td>
+                <p>Lists all known numbers and identifies if they're wireless or landline.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Age or Date of Birth</p>
+              </td>
+              <td>
+                <p>View age or full DOB (available with Restricted Access).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Relatives</p>
+              </td>
+              <td>
+                <p>See names and ages of known relatives.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Email Addresses</p>
+              </td>
+              <td>
+                <p>Shows available email addresses linked to the person.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Driver's License (Add-On)</p>
+              </td>
+              <td>
+                <p>For verified business accounts with Restricted Access only.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Comprehensive Background Report</p>
+              </td>
+              <td>
+                <p>Generate full reports instantly from People Search results.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <p class="sb-text-light mt-4">Any person found in Searchbug's People Search results can be used to obtain a
+        Comprehensive Background Report.
+      </p>
+      <p class="sb-text-light">For accounts with a <strong><a href="#">Restricted Access Add-On</a></strong>, you may
+        also see driver's
+        license number information. Standard
+        accounts will display age, but to view full date of birth details, a verified business account is required.</p>
+      <p class="sb-text-light" style="font-style: italic;">Note: Not all information is available for every record.
+        Results depend on what
+        data is reported and accessible
+        in public and private sources.</p>
+    </div>
+  </section>
 
-      <div class="row">
-        <div class="col">
-          <p class="mt-4 text-center">If someone you plan to do business with or legitimately gives you their phone
-            number for follow up or future friendship and the number doesn't have any information available or report
-            back to their name, that <strong>could be a red flag.</strong></p>
-        </div>
+
+  <!-- Searchbug vs Competitors Section -->
+  <section class="padding-tb-50" id="sb-vs-competitors-pf">
+    <div class="container">
+      <h2 class="heading-2-orange">Searchbug vs Competitors</h2>
+      <h3 class="heading-3-dark text-center">(Free and Paid People Search Options) </h3>
+      <div class="table-responsive">
+
+        
+          <table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
+	<thead>
+		<tr>
+			<th scope="col">People Finder Tool</th>
+			<th scope="col">PROs</th>
+			<th scope="col">CONs</th>
+			<th scope="col">Best for</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">Searchbug</th>
+			<td data-label="PROs">Multiple search options (people search, reverse phone, email, background checks), upfront pricing from $1, no subscriptions, no charge if no results, accurate premium data, strong customer support</td>
+			<td data-label="CONs">Only covers U.S. records (no international searches)</td>
+			<td data-label="Best for">Affordable, reliable searches in the USA</td>
+		</tr>
+		<tr>
+			<th scope="row">Truthfinder</th>
+			<td data-label="PROs">In-depth reports including criminal, mobile app, marriage/divorce, social profiles; dark web scan</td>
+			<td data-label="CONs">Expensive; some info may be outdated</td>
+			<td data-label="Best for">Detailed background checks in the U.S</td>
+		</tr>
+		<tr>
+			<th scope="row">BeenVerified</th>
+			<td data-label="PROs">Unlimited searches; includes criminal records &amp; social media</td>
+			<td data-label="CONs">Higher pricing; not ideal for occasional searches</td>
+			<td data-label="Best for">Frequent users who need many searches</td>
+		</tr>
+		<tr>
+			<th scope="row">People Finder</th>
+			<td data-label="PROs">Affordable pricing; reverse phone, email, and address lookup options</td>
+			<td data-label="CONs">Limited free searches; some info not always up to date</td>
+			<td data-label="Best for">Budget-friendly search with multiple lookup types</td>
+		</tr>
+		<tr>
+			<th scope="row">Spokeo</th>
+			<td data-label="PROs">Access to social media profiles + public records; easy-to-use interface</td>
+			<td data-label="CONs">Requires subscription; no mobile app; higher pricing</td>
+			<td data-label="Best for">Quick checks for online/social connections</td>
+		</tr>
+		<tr>
+			<th scope="row">Intelius</th>
+			<td data-label="PROs">Includes criminal &amp; civil court records; multiple search types; good support</td>
+			<td data-label="CONs">Expensive (some reports $50); slower results; some outdated data</td>
+			<td data-label="Best for">Legal or employment background checks</td>
+		</tr>
+		<tr>
+			<th scope="row">Pipl</th>
+			<td data-label="PROs">Deep web search, international coverage in 200+ countries, strong for social/blog data</td>
+			<td data-label="CONs">Costly; requires purchase of search credits; free results limited</td>
+			<td data-label="Best for">International people searches</td>
+		</tr>
+		<tr>
+			<th scope="row">US Search</th>
+			<td data-label="PROs">Comprehensive background checks with public and social records; user-friendly</td>
+			<td data-label="CONs">Higher pricing; no international coverage</td>
+			<td data-label="Best for">Domestic background checks in the U.S.</td>
+		</tr>
+		<tr>
+			<th scope="row">Zaba Search</th>
+			<td data-label="PROs">Free searches by name, phone, or address</td>
+			<td data-label="CONs">Limited options; some data may be outdated</td>
+			<td data-label="Best for">Quick, no-cost lookups</td>
+		</tr>
+		<tr>
+			<th scope="row">Instant</th>
+			<td data-label="PROs">Wide search options; includes criminal, social, and contact info; mobile app available</td>
+			<td data-label="CONs">High pricing; some info outdated</td>
+			<td data-label="Best for">On-the-go searches with app access</td>
+		</tr>
+	</tbody>
+</table>
+
       </div>
     </div>
   </section>
 
+  <!-- Best People Search Section -->
+  <section class="padding-tb-50" id="sb-best-people-search-pf">
+    <div class="container">
+      <h2 class="heading-2-orange">Best People Search Tool </h2>
+      <p>Here's what makes Searchbug stand out compared to other free and paid people search tools:</p>
+      <div class="list-green-check2">
+        <ul>
+          <li>Transparent and affordable pricing with no hidden fees</li>
+          <li>No subscriptions required — pay only when results are found</li>
+          <li>Searches start as low as $1</li>
+          <li>No charge for empty results</li>
+          <li>Verified premium data for accuracy and reliability</li>
+          <li>Multiple lookup options include people search, reverse phone, and email search</li>
+          <li>Excellent customer support for individuals and businesses</li>
+          <li>Ideal for U.S.-based searches without long-term contracts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Use a People Finder Tool Section -->
+  <section class="padding-tb-50" id="sb-why-use-pf">
+    <div class="container">
+      <h2 class="heading-2-orange">Why Use a People Finder Tool</h2>
+      <p>A people finder tool can be useful for both personal and business purposes. Whether you want to reconnect with
+        someone or build stronger contact lists for marketing, these tools help you access accurate and verified details
+        quickly.</p>
+      <div class="row mt-4 align-items-stretch">
+        <div class="col-lg">
+          <div class="sb-rounded-box-gray h-100">
+            <h3>Personal Use</h3>
+            <div class="list-green-check2">
+              <ul>
+                <li>Reconnect with friends or family you've lost touch with.</li>
+                <li>Look up someone online to confirm their identity before meeting or communicating.</li>
+                <li>Check public records online for background details like past addresses or known aliases.</li>
+                <li>Find people by name and address to update your personal contacts.</li>
+                <li>How to find someone's contact details quickly when all you have is limited information.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="sb-rounded-box-gray h-100">
+            <h3>Business Use</h3>
+            <div class="list-green-check2">
+              <ul>
+                <li>Verify customer information during onboarding to reduce fraud and errors.</li>
+                <li>Strengthen lead generation efforts by finding and confirming accurate contact details</li>
+                <li>Append or update databases with verified phone numbers, emails, and addresses</li>
+                <li>Search for someone in the US to make sure your leads are real and reachable</li>
+                <li>Support compliance needs with reliable data for KYC and AML checks in regulated industries</li>
+                <li>Integrate via API for bulk lookups, list cleaning, and real-time lead validation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Testimonial Section -->
-  <section class="sb-bg-dark padding-tb-50" id="sb-testimonial">
+  <section class="sb-bg-orange padding-tb-50" id="sb-testimonial">
     <div class="container">
       <h2 class="heading-2-light">Here is what our customers say about our
-        <br />Reverse Phone Lookup Tool.
+        <br />
+        People Finder Tool
       </h2>
       <div class="row align-items-stretch">
         <div class="col-md sb-testimonial-col-1">
           <div class="h-100 d-flex flex-column justify-content-between">
             <div>
-              <p>"Simple, accurate searches. Nice interface. No theatrics like other search sites" </p>
+              <p>"The young lady that assisted me was very polite and helpful. I would recommend this service to others
+                for future lookups." </p>
             </div>
-            <div class="customer-reverse-phone-lookup">
+            <div class="sb-testimonial-customer">
               <div><img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/reverse-phone-lookup-user-1.png"
                   alt=""></div>
               <div>
-                <div class="sb-testimonial-name">Vernon Summers</div>
-                <div class="sb-testimonial-review">Review given from Trustpilot</div>
+                <strong>Vernon Summers</strong>
+                <div style="font-style: italic">Review given from Trustpilot</div>
               </div>
             </div>
           </div>
@@ -894,12 +742,12 @@ a {
               <p>"I used Searchbug recently and was very satisfied. With the services offered and with the customer
                 service."</p>
             </div>
-            <div class="customer-reverse-phone-lookup">
+            <div class="sb-testimonial-customer">
               <div><img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/reverse-phone-lookup-user-1.png"
                   alt=""></div>
               <div>
-                <div class="sb-testimonial-name">Bob</div>
-                <div class="sb-testimonial-review">Review given from Trustpilot</div>
+                <strong>Bob</strong>
+                <div style="font-style: italic">Review given from Trustpilot</div>
               </div>
             </div>
           </div>
@@ -907,15 +755,15 @@ a {
         <div class="col-md sb-testimonial-rpl-col-3">
           <div class="h-100 d-flex flex-column justify-content-between">
             <div>
-              <p>"The young lady that assisted me was very polite and helpful. I would recommend this service to others
-                for future lookups."</p>
+              <p>"I used Searchbug recently and was very satisfied. With the services offered and with the customer
+                service."</p>
             </div>
-            <div class="customer-reverse-phone-lookup">
+            <div class="sb-testimonial-customer">
               <div><img src="https://www.searchbug.com/info/wp-content/uploads/2025/10/reverse-phone-lookup-user-1.png"
                   alt=""></div>
               <div>
-                <div class="sb-testimonial-name">Julio V.</div>
-                <div class="sb-testimonial-review">Review given on Best Company</div>
+                <strong>Julio V.</strong>
+                <div style="font-style: italic">Review given on Best Company</div>
               </div>
             </div>
           </div>
@@ -927,7 +775,7 @@ a {
   <!-- Our Blogs Section -->
   <section class="padding-tb-50 sb-bg-dark" id="sb-blogs">
     <div class="container">
-      <h2 class="heading-2-light">Our Blogs</h2>
+      <h2 class="heading-2-light fw-medium">Check out these resources from our blog section to learn more</h2>
       <div class="row">
         <div class="col-6 col-lg-3">
 
@@ -990,71 +838,56 @@ a {
     </div>
   </section>
 
-  <!-- How to Know Own Phone Number Section -->
-  <section class="padding-tb-50 sb-bg-dark d-none">
+  <!-- Related Searchbug Tools Section -->
+  <section class="padding-tb-50">
+    <div class="container" id="sb-related-tools-pf">
+      <h2 class="heading-2-orange">Related Searchbug Tools </h2>
+      <div class="sb-rounded-box-gray">
+        <h3 class="heading-3-orange">Reverse Phone Lookup</h3>
+        <p>Find out who owns a phone number. Get name, address, and other available details instantly. Use this tool to
+          confirm unknown callers, update contacts, or verify leads.</p>
+      </div>
+      <div class="sb-rounded-box-gray">
+        <h3 class="heading-3-orange">Bulk Data Appending</h3>
+        <p>Fill in missing information on your customer or lead lists. Upload a file to append names, phone numbers,
+          addresses, or emails in bulk. Get an instant estimate online and benefit from automated volume discounts.</p>
+      </div>
+      <div class="sb-rounded-box-gray">
+        <h3 class="heading-3-orange">Background Check</h3>
+        <p>Access verified information from public and private sources. Run background checks to confirm identity,
+          review address history, and see possible criminal or court records when available.</p>
+      </div>
+      <div class="sb-rounded-box-gray">
+        <h3 class="heading-3-orange">Skip Trace & Private Investigator Services</h3>
+        <p>Need to find someone who's hard to locate? Our skip tracing tools combine public records with premium
+          databases to return verified addresses, phone numbers, and other identifiers. For cases requiring deeper
+          research, you can also hire a licensed private investigator to uncover details not available through automated
+          lookups.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action Section -->
+  <section class="padding-tb-50 sb-bg-dark" id="sb-cta-dark">
     <div class="container">
-      <div class="row mt-4">
-        <div class="col-lg">
-          <h2 class="heading-2-orange text-left">How to Know Who Owns a Phone Number?</h2>
-          <h3 class="heading-3-orange text-left">Perform a Reverse Phone Number Search<br /> Using Searchbug's Tool</h3>
-          <ul class="sb-text-light">
-            <li>Create a free Searchbug Account.</li>
-            <li>Enter a full 10-digit phone number in any format and click Search.
-            <li>Sign up for a free Searchbug account and get one free phone number search
-              or other instant lookup</li>
-            <li>Available for first-time users who complete the sign up process</li>
-          </ul>
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="https://www.searchbug.com/info/wp-content/uploads/2025/11/people-finder-cta.png" alt=""
+            class="sb-image-center">
         </div>
-        <div class="col-lg">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/xA9gD1HYkzk?si=LWfL6Ekzaj-jwriK" title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="col-lg-9 d-flex justify-content-center align-items-center">
+          <div>
+            <h3 class="heading-3-dark">Are you a Developer or Business?</h3>
+            <p class="sb-text-primary">Integrate our People Search API to enrich customer data, verify leads, and
+              automate list updates.
+              Perfect for CRMs, lead generation workflows, and compliance checks.
+            </p>
+            <a href="https://www.searchbug.com/api/identify-phone-number.aspx" target="new_window"><button
+                class="sb-button-orange" style="margin-left: 0;">Try Now</button></a>
           </div>
         </div>
       </div>
-    </div>
   </section>
-
-  <section class="padding-tb-50 text-center sb-bg-dark d-none">
-    <div class="container">
-      <h2 class="heading-2-orange text-center">How Much is a Reverse Phone Lookup? </h2>
-      <div class="row sb-text-light">
-        <div class="col-6">
-          <img src="https://www.searchbug.com/info/wp-content/uploads/2025/11/Search-Tokens.png" alt="">
-          <p class="mt-1">$1.95 or 195 $T (Search Tokens)</p>
-        </div>
-        <div class="col-6">
-          <img
-            src="https://www.searchbug.com/info/wp-content/uploads/2025/11/There-is-no-charge-if-information-is-not-found.png"
-            alt="">
-          <p class="mt-1">There is no charge if information is not found</p>
-        </div>
-      </div>
-      <div class="row mt-4 sb-text-light">
-        <div class="col-6">
-          <img
-            src="https://www.searchbug.com/info/wp-content/uploads/2025/11/New-users-are-eligible-to-get-FREE-500-T.png"
-            alt="">
-          <p class="mt-1">New users are eligible to get FREE 500 $T</p>
-        </div>
-        <div class="col-6">
-          <img src="https://www.searchbug.com/info/wp-content/uploads/2025/11/No-Monthly-Membership-or-Subscription.png"
-            alt="">
-          <p class="mt-1">No Monthly Membership or Subscription</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
 
   <!-- FAQs -->
   <section class="padding-tb-50 bg-light" id="sb-faq">
@@ -1069,7 +902,7 @@ a {
         <div class="faq-item">
           <button class="faq-header" data-toggle="collapse" data-target="#faq1">
             <span class="faq-icon">&#9656;</span>
-            How to see who owns a phone number?
+            Is there a free search to find someone?
           </button>
           <div id="faq1" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
@@ -1083,7 +916,7 @@ a {
         <div class="faq-item">
           <button class="faq-header" data-toggle="collapse" data-target="#faq2">
             <span class="faq-icon">&#9656;</span>
-            Is Reverse Phone Lookup free?
+            How to find a person by name?
           </button>
           <div id="faq2" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
@@ -1098,8 +931,7 @@ a {
         <div class="faq-item">
           <button class="faq-header" data-toggle="collapse" data-target="#faq3">
             <span class="faq-icon">&#9656;</span>
-            Can I look up cell phone numbers?
-
+            What is the best way to find someone?
           </button>
           <div id="faq3" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
@@ -1113,7 +945,7 @@ a {
         <div class="faq-item">
           <button class="faq-header" data-toggle="collapse" data-target="#faq4">
             <span class="faq-icon">&#9656;</span>
-            Caller ID Lookup vs Reverse Phone Lookup
+            Is it legal to search for people online?
           </button>
           <div id="faq4" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
@@ -1128,7 +960,7 @@ a {
         <div class="faq-item">
           <button class="faq-header" data-toggle="collapse" data-target="#faq5">
             <span class="faq-icon">&#9656;</span>
-            Is Reverse Phone Lookup legal?
+            Can I search for celebrities, politicians, and other public figures in a people search tool?
           </button>
           <div id="faq5" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
@@ -1142,8 +974,7 @@ a {
         <div class="faq-item">
           <button class="faq-header" data-toggle="collapse" data-target="#faq6">
             <span class="faq-icon">&#9656;</span>
-            Is Searchbug good for Reverse Phone Lookup?
-
+            Is Searchbug great for people search?
           </button>
           <div id="faq6" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
@@ -1152,74 +983,27 @@ a {
             </div>
           </div>
         </div>
-
         <!-- FAQ ITEM -->
         <div class="faq-item">
           <button class="faq-header" data-toggle="collapse" data-target="#faq6">
             <span class="faq-icon">&#9656;</span>
-            How much does a Searchbug Reverse Phone Lookup cost?
-
+            Can I integrate Searchbug’s people finder with my CRM or via API?
           </button>
           <div id="faq6" class="collapse" data-parent="#faqAccordion">
             <div class="faq-body">
-              A reverse phone lookup costs $1.95 or 195 $T, and you only pay when results are found. New users also get 500 free $T with any token purchase.
+              Yes. Businesses and developers can integrate Searchbug’s People Search API directly into their CRM or
+              workflow for real-time lookups, bulk
+              data updates, and list cleaning. Test Searchbug's People Search API by registering for a FREE API Test
+              Account today with $10 in credits so
+              you can verify the data accuracy before committing.
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   </section>
 
-  <section id="sb-cta-rpl" class="padding-tb-50 d-none">
-    <div class="container">
-      <div>
-        <h2 class="heading-2-dark text-left">You may also consider this...</h2>
-        <div style="padding-left: 3rem;">
-          <h3 class="heading-3-orange"><a href="https://www.searchbug.com/batch/phone-name-address-email-append.aspx"
-              target="new_window">Reverse Phone Lookup in a Batch</a></h3>
-          <ul>
-            <li class="sb-text-primary">Self-Service Bulk Reverse Phone Lookup - find name, address, city, state and zip
-              for your list of phone numbers. Update CRM, customers, leads, and prospects so your data stays accurate.
-              Simple file upload, Instant on-line estimate and automated volume discounts.</li>
-          </ul>
-          <h3 class="heading-3-orange mt-4"><a href="https://www.searchbug.com/batch/bulk-phone-validator.aspx"
-              target="new_window">Bulk Phone Number Validator</a></h3>
-          <ul>
-            <li class="sb-text-primary">Identify phone numbers as Cell or Landline and VoIP. Self-service bulk phone
-              validator determines line type, current provider, MMS email address, fake numbers, active, dosconnected,
-              and more.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Call To Action Section -->
-  <section class="padding-tb-50 sb-bg-light d-none" id="sb-cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="https://www.searchbug.com/info/wp-content/uploads/2025/11/people-finder-cta.png" alt=""
-            class="sb-image-center">
-        </div>
-
-        <div class="col-md-9 d-flex justify-content-center align-items-center">
-          <div>
-            <h3 class="heading-3-dark">Are you a web developer or IT specialist?</h3>
-            <p class="sb-text-primary">Check out our <a href="https://www.searchbug.com/api/identify-phone-number.aspx"
-                target="new_window">Phone
-                Number API's</a> to help with data enrichment, prevent fraud, and keep you in Compliance with the FCC.
-            </p>
-            <a href="https://www.searchbug.com/api/identify-phone-number.aspx" target="new_window"><button
-                class="sb-button-orange" style="margin-left: 0;">Try Now</button></a>
-          </div>
-        </div>
-      </div>
-  </section>
+  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -1240,8 +1024,6 @@ a {
       });
     });
   </script>
-
-
 
 </body>
 
